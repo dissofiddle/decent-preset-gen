@@ -1,9 +1,11 @@
 # decent-preset-gen
-Simple python script to generate decent sample instrument from wav samples (multi)
+Simple python script to generate preset for decent sampler from wav samples (multi)
 
 
 This script is made to generate decent sampler preset from a collections of file with root
-note and optionnally velocity (ex; Moog_A1.wav, Moog_b1.wav, Moog_C#2.wav, ..., etc). Script attempt to match note and velocity with the additionnal 
+note and optionnally velocity (ex; Moog_A1.wav, Moog_b1.wav, Moog_C#2.wav, ..., etc). 
+
+Script attempts to match note and velocity with the additionnal 
 possibility to provide the naming pattern ( ex : 'Moog_{note}.wav' or guitar_{note}_v{vel}.wav  )
 
 
@@ -26,19 +28,19 @@ options:
                         Limit extension above highest root (in semitones).
 ```
 
-## usage
+## Usage
 
-### Basic use
+### Basic usage
 ```
 python decent_preset_gen.py --folder ./FM_Bass/ 
 ```
 
-### Make preset "portable" (independant from absolute path)
+### Make preset "portable" (independent from absolute path)
 ```
 python decent_preset_gen.py --folder ./FM_Bass/ --out ./decent_bass --copy-sample
 ```
 
-###  portable Use + pattern use
+###  Portable + pattern
 ```
 python decent_preset_gen.py 
     --folder ./FM_Bass/ \
